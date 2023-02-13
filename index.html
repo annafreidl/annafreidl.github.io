@@ -44,7 +44,14 @@
     </style>
   </head>
   <body>
-    <h1>Hello World</h1>
+    <h1 id="header" style="color:purple">Hello World</h1>
+    <script>
+        document.getElementById("header").addEventListener("click", function() {
+          if (this.style.color == "purple"){
+             this.style.color = "green";}
+          else {this.style.color == "purple";
+          });
+    </script>
     <div class="vita">
       <p> This website is still a work in progress <br>
           To sweeten the waiting time here is a little tik-tak-toe game:  
