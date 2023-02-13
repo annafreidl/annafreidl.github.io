@@ -20,6 +20,7 @@
         align-items: center;
         height: 500px;
         margin-top: 50px;
+        flex-direction: column;
       }
     </style>
   </head>
@@ -41,7 +42,7 @@
           if (guess == answer) {
             result.innerHTML = "Du hast gewonnen! Die Antwort war " + answer;
           } else {
-            result.innerHTML = "Leider falsch. Versuche es erneut.";
+            result.innerHTML = "Leider falsch.\nVersuche es erneut.";
           }
         });
       </script>
